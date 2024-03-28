@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <!-- 页眉区 -->
+    <nav class="homenav">
+        <div class="navtitle"><strong>DENG DAN</strong>|MY PROFILE</div>
+        <a href="../index.html">HOME</a>
+        <a href="./album.html">ALBUM</a>
+        <a href="join.html">JOIN</a>
+    </nav>
+    <!-- 主体部分 -->
+    <div class="join">
+        <!-- 左边部分 -->
+        <section class="left">
+        <form action="" method="post" class="contact">
+            <h1>联系表&emsp;Contact Form
+                <span>请填完各项信息&emsp;Please fill all the texts in the fields.</span>
+            </h1>
+            <!-- <label> 标签为 input 元素定义标签 -->
+            <!-- 姓名 单行输入框-->
+            <label>
+                <span>Your Name :</span>
+                <input type="text" name="name" placeholder="Your Full Name" />
+            </label>
+            <!-- 邮箱 单行输入框-->
+            <label>
+                <span>Your Email :</span>
+                <input type="email" name="email" placeholder="Valid Email Address" />
+            </label>
+            <!-- 生日 日期类型，选取日、月、年-->
+            <label>
+                <span>Birthday :</span>
+                <input type="date" name="date">
+            </label>
+            <!-- 性别 单选按钮 默认选中项为女生-->
+            <label id="radio">
+                <span>Gender :</span>
+                <input type="radio" name="gender" value="boy">boy&emsp;
+                <input type="radio" name="gender" value="girl" checked>gril
+            </label>
+            <!-- 爱好 下拉框选择-->
+            <label>
+                <span>Your Hobby :</span>
+                <select id="hobby" name="hobby">
+                    <option value="yoga">瑜伽</option>
+                    <option value="run">慢跑</option>
+                    <option value="badminton">羽毛球</option>
+                    <option value="volleyball">排球</option>
+                </select>
+            </label>
+            <!-- 最喜欢的app 复选框 默认为微信-->
+            <label>
+                <span>Favorite Apps :</span>
+                <input type="checkbox" name="apps" value="QQ">QQ<br>
+                <input type="checkbox" name="apps" value="Wechat" checked>Wechat<br>
+            </label>
+            <!-- 你的信息 多行文本框-->
+            <label>
+                <span>Message :</span>
+                <textarea id="message" name="message" placeholder="Your Message to Me"></textarea>
+            </label>
+            <!-- 提交 按钮-->
+            <label>
+                <span>&nbsp;&nbsp;</span>
+                <input type="button" class="button" value="Send" />
+            </label>
+        </form>
+        </section>
+        <!-- 右边部分 -->
+        <section class="right">
+            <!-- 文本区 -->
+            <article class="chat">
+                <!-- 文字部分 -->
+                <h1>有趣的人不孤单^_^</h1>
+                <h2>加入我的奇妙聊天区</h2>
+                <h3>开心一笑</h3>
+                <p>&emsp;&emsp;1.有个朋友第一次勤工俭学在公园里卖冰棍，不好意思吆喝；这时候突然有一人
+                    在那里大喊：“卖冰棍儿~~~卖冰棍儿~~”。那朋友一听，心里可高兴了，就跟着喊：“我也是~~~我也是~~~”。<br>
+                    &emsp;&emsp;2.医生问病人是怎么骨折的，答：我觉得鞋里有沙子，就扶着电线杆抖鞋，我抖啊抖......
+                    有个人以为我触电了，便抄起木棒给了我两棒子。­<br>
+                    &emsp;&emsp;3.我对小明说:“你是猪。”小明说:“我是猪才怪!”从此我就叫小明猪才怪。终于有一天,小明忍不住当着众人的面对我吼道:
+                    “我不是猪才怪!”
+                </p>
+                <!-- 链接部分 -->
+                <div class="applink">
+                    <a href="https://im.qq.com/index/" target="top">
+                        <div class="icon qq">
+                            <ul>
+                                <li>link to QQ</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="https://wx.qq.com/" target="top">
+                        <div class="icon vx">
+                            <ul>
+                                <li>link to Wechat</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="https://www.bilibili.com/" target="top">
+                        <div class="icon bili">
+                            <ul>
+                                <li>link to bilibili</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" target="new front">
+                        <div class="icon gh">
+                            <ul>
+                                <li>link to GitHub</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <!-- 页脚区 -->
+    <footer>
+        <p>@2022-2023  |  BY:deng</p>
+        <p>There will be gains when there is effort.</p>
+        <p>Only with effort can there be gains.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+.contact {
+    margin: 40px;
+    max-width: 500px;
+    /* 设置最大宽度 */
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border: #666 dotted 1px;
+}
+ /* 表头标题样式 */
+.contact h1 {
+    font: 24px "Microsoft YaHe", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    background: #C0E1FF;
+    border-bottom: 1px solid #B8DDFF;
+    margin: -20px -20px 15px;
+}
+ /* 表头标题下详细要求的样式 */
+.contact h1>span {
+    display: block;
+    font-size: 11px;
+}
+ /* 表单每个label标签样式，以块状元素摆放 */
+.contact label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+ /* 每个label中行项目名称浮动到这一行的左侧，右对齐 */
+.contact label>span {
+    float: left;
+    width: 26%;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #5E5E5E;
+}
+ /* 多种输入框、下拉选择的样式 */
+.contact input[type="email"], .contact input[type="text"],.contact input[type="date"],.contact textarea, .contact select {
+    color: #888;
+    width: 65%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 8px 0px;
+}
+/* 单选框的样式 */
+.contact input[type="radio"] {
+    color: #888;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    margin: 2px 6px 8px 0px;
+}
+/* 复选框的样式 */
+.contact input[type="checkbox"] {
+    color: #888;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+}
+/* 单独调整一下一些选择器的边距或者宽度，使表单看起来更美观 */
+.contact #radio>span{
+    margin-top: 1px;
+}
+
+.contact select{
+    width: 66.5%;
+}
+.contact textarea{
+    margin-top: 8px;
+    height:100px;
+    padding: 5px 0px 0px 5px;
+}
+ /* 提交按钮的样式 */
+.contact .button{
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    /* 设置边框阴影 */
+    box-shadow: 1px 1px 1px #4C6E91;
+    /* 文本的阴影 */
+    text-shadow: 1px 1px 1px #5079A3;
+}
+ 
+.contact .button:hover{
+    background: #3EB1DD;
+}
+/* 鼠标停留时背景颜色加深 */

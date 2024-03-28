@@ -1,0 +1,124 @@
+@charset "utf-8";
+.join{
+    width: 1200px;
+    height: 100vh;
+    margin: 70px auto;
+    margin-bottom: 0;
+    display: flex;
+    /* 弹性布局 */
+    justify-content: center;
+    /* 水平居中 */
+    background-image: url("../img/join1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    overflow: hidden;
+    /* 溢出元素隐藏 */
+    border-radius: 50px;
+    animation: load 1s linear;
+    /* 设置了名为load的动画，持续时间1s，效果为线性 */
+    transition: 1s ease 0.2s;
+    /* ease：平滑过渡，设置动画效果持续1秒，延迟0.2s*/ 
+}
+
+.join .left{
+    width: 500px;
+    height: 100%;
+}
+
+.join .right{
+    width: 800px;
+    height: 100%;
+}
+.join .chat{
+    color: rgb(71, 92, 134);
+    width: 650px;
+    margin: auto;
+    display: flex;
+    /* 弹性布局 */
+    flex-direction: column;
+    /* 内部元素的排列方式为从上到下 */
+    font-size: 1.1em;
+}
+.join .chat h1{
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 85px;
+}
+.join .chat h3{
+    margin: 0;
+}
+.join .chat p{
+    word-wrap: break-word;
+    color: rgb(61, 89, 144);
+}
+.applink{
+    width: 500px;
+    height: 100px;
+    flex-direction: row;
+    /* 内部项目的排列方式为从左到右 */
+    display: flex;
+    justify-content: space-around;
+    /* 每个项目两侧的间隔相等。项目之间的间隔比项目与边框的间隔大一倍。 */
+    margin-top: 50px;
+}
+
+.applink .icon{
+    /* 设置链接图标样式 */
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s ease 0s;
+    /* ease：平滑过渡，设置所有属性动画效果持续0.4秒，无延迟*/
+}
+.applink .icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    /* 鼠标滑过时放大1.1倍，呈现为指示链接的指针(一只手)*/
+}
+.applink .qq{
+    background-image: url("../img/qq.png");
+    background-size: 25px;
+}
+.applink .vx{
+    background-image: url("../img/vx.png");
+}
+.applink .bili{
+    background-image: url("../img/bili.png");
+    background-color: rgb(245, 128, 147);
+}
+.applink .gh{
+    background-image: url("../img/github.png");
+    background-size: 40px;
+}
+
+.icon ul{
+    display: none;
+    list-style: none;
+    /* 去掉默认的下划线 */
+    margin-top: 30px;
+    width: 100px;
+    margin-left: -65px;
+    color: rgb(61, 89, 144);
+    font-size: 14px;
+}
+
+.icon:hover ul{
+    display: block;
+    position: absolute;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+        margin-top: 100px;
+        /* 动画开始时不显示，上边距为100px */
+    }
+    100%{
+        opacity: 1;
+        margin-top: 50px;
+        /* 动画结束时，上边距为50px */
+    }
+}

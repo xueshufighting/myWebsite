@@ -1,0 +1,31 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 按照图片的比例充满容器,位置居中 */
+    background-position: center;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    font-size: medium;
+    /* 定义字体基本大小为中等 */
+}
+
+footer{
+    margin-top: 0px;
+    /* 宽度为基于视窗的100vw */
+    width: 100vw;
+    height: 90px;
+    float: left;
+    /* 清除两侧的浮动元素 */
+    clear: both;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgb(131, 169, 222);
+}
+footer p{
+    line-height: 10px;
+    color: rgb(28, 43, 43);
+}

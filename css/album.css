@@ -1,0 +1,108 @@
+@charset "utf-8";
+#carousel {
+	position: relative;
+	/* 在body中相对定位 */
+	margin: 76px auto;
+    margin-bottom: 10px;
+	padding: 0;
+	width: 1000px;
+	height: 87vh;
+}
+#carousel .content {
+	position: relative;
+	/* 在carousel中相对定位 */
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* 隐藏溢出的元素 */
+}
+#carousel .content .imgs {
+	position: absolute;
+	/* 在content区中采用绝对定位 */
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	width: 7000px;
+	/*多留出一张图片的宽度！*/
+	list-style: none;
+	/* 去除下划线 */
+}
+/* 图片区每个列表项的样式 */
+#carousel .content .imgs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	height: 87vh;
+}
+/* 每个列表项中图片的样式 */
+#carousel .content .imgs li img {
+	width: 100%;
+	height: 100%;
+}
+/* 下方小圆点区 */
+#carousel .content .dots {
+	width: 200px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: 10px;
+	list-style: none;
+	/* 去除下划线 */
+	text-align: center;
+	/* 居中 */
+	display:inline;
+	/* 以内联元素摆放，使小圆点排列成一行 */
+}
+/* 每个小圆点的样式 */
+#carousel .content .dots li {
+	float: left;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	margin-left: 10px;
+	cursor: pointer;
+	/* 鼠标停留时变为一只手指示 */
+}
+/* 设置滑动到对应序号图片时小圆点的颜色 */
+li.active {
+	background-color: rgb(84, 109, 158);
+}
+/* 设置未滑动到对应序号图片时小圆点的颜色 */
+li.quiet {
+	background-color: rgb(173, 174, 180);
+}
+/* 默认情况下左右切换按钮不显示 */
+.btns {
+	display: none;
+}
+.btns span {
+	position: absolute;
+	width: 25px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-family: Simsun;
+	font-size: 30px;
+	border: 1px solid #fff;
+	opacity: 0.5;
+	cursor: pointer;
+	/* 鼠标停留时变为一只手指示 */
+	color: #fff;
+	background: black;
+}
+.btns .left {
+	left: 5px;
+}
+.btns .right {
+	left: 100%;
+	margin-left: -32px;
+}
+

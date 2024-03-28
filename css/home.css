@@ -1,0 +1,126 @@
+@charset "utf-8";
+.titleimg{
+    background-image: url("../img/home.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.titleimg .title{
+    width: 1000px;
+    padding:12%;
+    padding-top: 18%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgba(49, 70, 87,0.9);
+}
+
+.titleimg .Chinese{
+    font-size: 20px;
+}
+
+main{
+    scroll-snap-type: y mandatory;
+    /* 定义在滚动容器中的一个临时点（snap point）如何被严格的执行,
+    使滚动更加自然 y表示垂直滚动，mandatory关键字意味着浏览器必须捕捉到每个滚动点
+    */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* 设置滚动条是一个和内容并列显示的组件。隐藏x轴方向的滚动条 */
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.English{
+    font-size: medium;
+}
+
+.pt{
+    display: flex;
+    flex-direction: column;
+    /* 主轴（项目的排列方向）为垂直方向，起点在上沿。 每一个卡片中图片和文本上下排列 */
+    height: 480px;
+    /* width: 250px; */
+    width: 18vw;
+    float: left;
+    margin: 6% 0px 0px 5%;
+    background-color: rgb(177, 212, 233,0.8);
+    box-shadow: 0 0 15px rgb(59, 73, 95);
+    border-radius: 15px;
+    overflow: hidden;
+    /* 当元素内的内容溢出的时候使它隐藏溢出的部分 */
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
+    /* ease：平滑过渡，设置首页背景效果持续0.5秒，无延迟 */
+}
+
+.pt:hover{
+    cursor: pointer;
+    /* 将光标呈现为指示链接的指针(一只手) 拓展: */
+    transform: scale(1.05);
+    /* 放大动画，当鼠标经过时放大1.05倍 */
+}
+.part1{
+    margin-left: 5%;
+}
+.part1 .img{
+    background-image: url("../img/homept1.jpeg");
+}
+.part2 .img{
+    background-image: url("../img/homept2.jpeg");
+}
+.part3 .img{
+    background-image: url("../img/homept3.jpeg");
+}
+.part4 .img{
+    background-image: url("../img/homept4.jpg");
+}
+
+.pt .img{
+    height: 220px;
+    width: 18vw;
+    background-size: cover;
+    transition: all 0.5s ease 0s;
+    /* ease：平滑过渡，设置鼠标滑过时所有属性效果持续0.5秒，无延迟 */
+    opacity: 0.8;
+    /* 不透明度为0.8 */
+}
+
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+.pt article{
+    height: 310px;
+    width: 18vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* 布局为上下排列 */
+    margin: auto;
+    /* 凝胶布局 */
+}
+
+.pt article h1{
+    /* 标题居中 */
+    text-align: center;
+    font-size: 3em;
+    color: rgb(28, 44, 68);
+    height: 30px;
+    line-height: 30px;
+}
+
+.pt article p{
+    margin-top: -2px;
+    margin-left: 0.5vw;
+    word-wrap: break-word;
+    /* 将一个单词超出的部分换到下一行。 */
+    color: rgb(84, 109, 158);
+    line-height: 1.5;
+}

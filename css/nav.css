@@ -1,0 +1,78 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    display: flex;
+    /* 采用弹性布局 */
+    justify-content: space-around;
+    /* space-around使弹性项目以相等的间距放置，即在彼此之间和角落之前，之间和之后。 */
+    align-items: center;
+    /* 垂直居中 */
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    background-color: rgb(131, 169, 222);
+    overflow: hidden;
+    font-size: 20px;
+    color: rgb(234, 247, 255);
+    opacity: 0.8;
+    /* 设置不透明度 */
+    z-index: 1000;
+    /* 控制定位元素在垂直于显示屏幕方向（z轴）上的堆叠顺序 */
+}
+.homenav{
+    animation: navload 1s linear;
+}
+
+nav:hover{
+    opacity: 0.95;
+    /* 鼠标停留时不透明度从0.8变为0.95，颜色加深 */
+}
+nav .navtitle{
+    padding-left: 15px;
+    width: 35%;
+}
+nav .navtitle strong{
+    /* 强调部分的样式 */
+    font-size: 50px;
+    font-weight: bolder;
+}
+nav a{
+   display: block;
+   justify-content: center;
+   text-decoration: none;
+   z-index: 1;
+   /* 控制定位元素在垂直于显示屏幕方向（z轴）上的堆叠顺序 */
+   height: inherit;
+    /* 高度继承父元素nav的高度 */
+   line-height: 70px;
+   width: 100px;
+   text-align: center;
+   font-weight: bolder;
+   color: rgb(84, 109, 158);
+   transition: 0.5s;
+   /* 设置过渡效果持续时间为0.5秒，从而鼠标滑过时的高亮效果更加自然 */
+}
+/* 鼠标划过激活背景颜色 */
+nav a:hover{
+    background-color: rgb(177, 212, 233);
+    border-radius: 5%;
+}
+
+@keyframes navload{
+    /* 动画完成需要的总时长为1s,刚开始的时候图片距顶部距离为-80px，1s后图片距顶部距离为0px */
+    /* 呈现效果为从屏幕上方出现，到向下完全伸出 */
+    0%{
+        top: -80px;
+        opacity: 0;
+        /* 不透明度为0 */
+    }
+    100%{
+        top: 0px;
+        opacity: 0.8;
+        /* 不透明度为0.8 */
+    }
+}
